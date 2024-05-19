@@ -1,0 +1,63 @@
+/* Universal rules */
+* {
+  box-sizing: border-box;
+}
+
+/* Specific rules */
+/* Container Div 
+    ===================*/
+.container {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Boxes 
+    ===================*/
+
+.box {
+  display: flex;
+  font-size: 300%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  height: 80px;
+  background-color: rgb(50, 159, 135);
+  translate: 0 -30px;
+  font-size: 150%;
+}
+
+.box2 {
+  height: 120px;
+  width: 150px;
+  background-color: rgb(50, 94, 159);
+  translate: 0 -20px;
+}
+
+.box3 {
+  height: 200px;
+  width: 250px;
+  font-size: 600%;
+  background-color: rgb(119, 50, 159);
+}
+
+.box4 {
+  height: 120px;
+  width: 150px;
+  background-color: rgb(159, 50, 90);
+  translate: 0 -20px;
+}
+
+.box5 {
+  height: 80px;
+  background-color: rgb(229, 147, 24);
+  font-size: 150%;
+  translate: 0 -30px;
+}
