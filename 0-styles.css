@@ -1,0 +1,42 @@
+/* General Styles: Container, List, Icons */
+ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 65vh;
+}
+
+li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f8f6f6;
+  padding: 30px;
+}
+
+/* Sprite Styles */
+
+.icon {
+  display: block;
+  width: 22vw;
+  height: 100vh;
+  margin-top: 20px;
+}
+
+.icon.i-html {
+  background: url('0-sprite.png') 0 0;
+  background-repeat: no-repeat;
+}
+
+.i-css {
+  background: url('0-sprite.png') -19vw 0;
+  background-repeat: no-repeat;
+}
+
+.i-js {
+  background: url('0-sprite.png') -38vw 0;
+  background-repeat: no-repeat;
+}
