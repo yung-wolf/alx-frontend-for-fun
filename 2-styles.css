@@ -1,0 +1,75 @@
+
+label div {
+    display: inline-block;
+}
+
+.toggle {
+    margin: 40px 0;
+}
+
+.toggle-label {
+    position: relative;
+    margin-left: 20px;
+}
+
+
+/* Checked */
+.toggle-cb:checked + .toggle-label .toggle-inner {
+    background-color: rgb(228, 64, 64);;
+    border: 2px solid rgba(224, 223, 223, 0.609);
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+}
+
+.toggle-cb:checked + .toggle-label .toggle-inner::after {
+    content: "Yes";
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    /* transform: translate(-50%, -50%); */
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch {
+    left: 80px;
+    top: -24px;
+}
+
+
+/* Unchecked */
+.toggle-inner{
+    border: 2px solid rgb(169, 169, 169);
+    border-radius: 30px;
+    background-color: rgba(224, 223, 223);
+    height: 30px;
+    width: 100px;
+    z-index: 1;
+}
+
+.toggle-switch {
+    border: 2px solid rgb(169, 169, 169);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: -24px;
+    z-index: 3;
+    background-color: white;
+}
+
+.toggle-cb + .toggle-label .toggle-inner::after {
+    content: "No";
+    color: rgb(192, 191, 191);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 60px;
+    top: -15px;
+    /* transform: translate(-50%, -50%); */
+}
