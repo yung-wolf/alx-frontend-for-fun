@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  position: relative;
+  color: rgb(202, 54, 54); /* This will keep the text color of the link */
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Adjust the height of the underline */
+  background-color: currentColor; /* This will match the underline color to the text color */
+  transition: width 0.5s ease; /* Adjust the duration and easing as needed */
+}
+
+a:hover::after {
+  width: 100%;
+}
